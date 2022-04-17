@@ -1,0 +1,225 @@
+.title {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.card {
+	background: $black;
+
+	.card-header {
+		padding: 0.5em;
+		background-color: $gray-light;
+		color: $black;
+		font-size: 1.4em;
+		border-radius: 0.2em 0.2em 0 0;
+	}
+
+	.card-body {
+		padding: 1em;
+	}
+
+	.card-footer {
+		background: $gray-dark;
+	}
+
+	&:last-child {
+		border-radius: 0 0 0.2em 0.2em;
+	}
+}
+
+.small,
+.content small {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+.link,
+.content a {
+	color: $primary;
+	border-bottom: 0.2em solid transparent;
+}
+
+.list,
+.ordered-list {
+	list-style-position: inside;
+}
+
+.list {
+	list-style-type: "▪ ";
+}
+
+.blockquote {
+	border-left: 0.5em solid $primary;
+	padding: 1em 1.5em;
+	background: $black;
+}
+
+.table {
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+
+	th,
+	td {
+		text-align: left;
+		vertical-align: top;
+		border: 1px solid $white;
+		padding: 0.5em;
+	}
+
+	th {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+.ordered-list {
+	list-style-type: decimal;
+
+	& > li > ol {
+		list-style-type: lower-alpha;
+	}
+}
+
+.link:hover,
+.content a:hover {
+	border-bottom-color: $primary;
+}
+
+.container {
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5em;
+}
+
+.button {
+	display: inline-block;
+	background: $white;
+	color: $black;
+	padding: 0.5em 1em;
+	border-radius: 0.2em;
+	transition: background-color 0.1s ease;
+
+	&:hover {
+		background-color: $primary;
+	}
+}
+
+.small {
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	color: $gray-light;
+}
+
+.content {
+	line-height: 1.6;
+
+	hr {
+		outline: none;
+		border: none;
+		border-bottom: 0.2em solid $white;
+		margin-bottom: 0.5em;
+	}
+
+	ul,
+	ol,
+	dl {
+		margin-bottom: 1em;
+	}
+
+	blockquote {
+		@extend .blockquote;
+		margin-bottom: 1em;
+	}
+
+	small {
+		@extend .small;
+	}
+
+	a {
+		@extend .link;
+	}
+
+	ul {
+		@extend .list;
+	}
+
+	ol {
+		@extend .ordered-list;
+	}
+
+	table {
+		@extend .table;
+		margin-bottom: 1em;
+	}
+
+	& > p:not(:last-child) {
+		margin-bottom: 1.6em;
+	}
+
+	& > pre:not(:last-child) {
+		margin-bottom: 1.6em;
+	}
+
+	p:not(:last-child) {
+		margin-bottom: 1em;
+	}
+
+	p code {
+		background: $gray-darker;
+		padding: 0.2em 0.4em;
+		border-radius: 0.2em;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1.5em;
+		margin-bottom: 0.25em;
+
+		&:not(:first-child) {
+			margin-top: 1.5em;
+		}
+	}
+
+	h1 {
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 1.4em;
+		font-weight: bold;
+
+		&:before {
+			content: "# ";
+		}
+	}
+
+	h3 {
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+
+	h4,
+	h5,
+	h6 {
+		font-size: 1.1em;
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+	small {
+		@extend .small;
+	}
+
+	.gridsome-highlight {
+		margin-bottom: 2em;
+	}
+}

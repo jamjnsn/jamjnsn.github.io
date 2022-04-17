@@ -1,0 +1,28 @@
+{
+	"name": "jnsn",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d dist"
+	},
+	"dependencies": {
+		"@fontsource/chakra-petch": "^4.5.6",
+		"@fontsource/fira-mono": "^4.5.7",
+		"@gridsome/plugin-google-analytics": "^0.1.2",
+		"@gridsome/remark-prismjs": "^0.5.0",
+		"@gridsome/source-filesystem": "^0.6.2",
+		"@gridsome/transformer-remark": "^0.6.4",
+		"@gridsome/transformer-yaml": "^0.2.1",
+		"@gridsome/vue-remark": "^0.2.6",
+		"gridsome": "^0.7.0",
+		"gridsome-plugin-remark-prismjs-all": "^0.4.8"
+	},
+	"devDependencies": {
+		"sass": "^1.50.0",
+		"sass-loader": "10.2.1",
+		"style-resources-loader": "^1.5.0"
+	}
+}

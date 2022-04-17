@@ -1,0 +1,22 @@
+$primary: #40e0d0;
+$primary-light: lighten($primary, 15%);
+$primary-dark: #1eac9d;
+
+$red: #e04090;
+$blue: #3f7beb;
+
+$white: #f1f7f6;
+$white-dark: #d4d8d7;
+$gray-light: #c6cac9;
+$gray: #979b9a;
+$gray-dark: #404443;
+$gray-darker: #282b29;
+$black: #0a0a0a;
+$black-light: #131313;
+
+$font-main: "Fira Code", Consolas, "Andale Mono WT", "Andale Mono",
+	"Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+	"Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+	"Courier New", Courier, monospace;
+$font-alt: "Chakra Petch", "Trebuchet MS", "Lucida Sans Unicode",
+	"Lucida Grande", "Lucida Sans", Arial, sans-serif;

@@ -1,0 +1,56 @@
+@import "variables";
+@import "components";
+@import "code";
+
+::selection {
+	text-shadow: none;
+	background: $white;
+	color: $black;
+}
+
+:root {
+	color-scheme: dark;
+}
+
+* {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	background-color: $black-light;
+	font-family: $font-main;
+	font-size: large;
+	color: $white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
