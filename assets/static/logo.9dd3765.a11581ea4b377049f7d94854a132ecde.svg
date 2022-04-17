@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.87 50.4" class="logo">
+	<style>
+		.logo {
+			fill: currentColor;
+			display: block;
+			width: 120px;
+			height: auto;
+		}
+	</style>
+	<g id="logo" data-name="logo">
+		<path d="M0,41.69V32.33H9.5v6.05l3.68,3.67h9.57l3.46-3.39V0H36V42L27.58,50.4H8.64Z" />
+		<path d="M45,0h8.78L76.25,34.2h.14V0h9.43V50.4H77L54.57,16.27h-.14V50.4H45Z" />
+		<path
+			d="M94.1,42.62v-7.2h9.65v4.25l2.38,2.38H121l2.45-2.45V31.25l-2.38-2.38H102L94.25,21.1V7.78L102,0h22.75l7.78,7.78v7.27H122.9V10.73l-2.37-2.38H106.27l-2.38,2.38v7.41l2.38,2.38h19.08l7.78,7.78V42.48l-7.92,7.92H101.88Z" />
+		<path d="M141.05,0h8.78l22.46,34.2h.15V0h9.43V50.4h-8.78L150.62,16.27h-.14V50.4h-9.43Z" />
+	</g>
+</svg>
