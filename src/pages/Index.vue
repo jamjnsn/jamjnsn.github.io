@@ -1,48 +1,49 @@
 <template>
 	<Layout>
 		<div class="container">
-			<div class="hello">
-				<pre v-html="hello" />
-			</div>
-
-			<div class="content">
-				<p>
-					I'm just a guy from Canada with a passion for technology.
-					Starting as a child making a website in Microsoft Paint,
-					I've sought out knowledge about computer programming and
-					design with a focus on constantly learning and improving.
-					Besides this, I also dabble in cooking, photography, music
-					production, and drumming.
-				</p>
-			</div>
+			<post-list :posts="posts" />
 		</div>
 	</Layout>
 </template>
 
+<page-query>
+query Posts {
+  allPost {
+    edges {
+      node {
+		title
+		date_posted (format: "MMMM D, YYYY")
+		date_updated (format: "MMMM D, YYYY")
+		slug
+		path
+		description
+		content
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
+import PostList from "../components/PostList.vue";
+
 export default {
-	metaInfo: {
-		title: "My home"
+	components: {
+		PostList
 	},
-	data() {
-		return {
-			hello: [
-				" _    _      _ _       _",
-				"| |  | |    | | |     | |",
-				"| |__| | ___| | | ___ | |",
-				"|  __  |/ _ \\ | |/ _ \\| |",
-				"| |  | |  __/ | | (_) |_|",
-				"|_|  |_|\\___|_|_|\\___/(_)",
-				"========================="
-			].join("\r\n")
-		};
+	metaInfo: {
+		title: "Blog"
+	},
+	computed: {
+		posts() {
+			let posts = [];
+			this.$page.allPost.edges.map(edge => {
+				posts.push(edge.node);
+			});
+			return posts;
+		}
 	}
 };
 </script>
 
-<style scoped lang="scss">
-.hello {
-	display: block;
-	margin-bottom: 1em;
-}
-</style>
+<style lang="scss"></style>

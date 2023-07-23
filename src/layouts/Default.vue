@@ -9,13 +9,6 @@
 				</div>
 
 				<div id="menu">
-					<div class="menu-item">
-						<g-link to="/projects">Projects</g-link>
-					</div>
-
-					<div class="menu-item">
-						<g-link to="/blog">Blog</g-link>
-					</div>
 				</div>
 			</div>
 
